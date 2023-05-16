@@ -10,6 +10,7 @@ Attendance.destroy_all
     last_name: Faker::Name.last_name,
     description: Faker::Quote.most_interesting_man_in_the_world,
     email: "#{Faker::Name.first_name.downcase}-#{Faker::Name.last_name.downcase}@yopmail.com",
+    encrypted_password: Faker::Internet.password
   )
 end
 
